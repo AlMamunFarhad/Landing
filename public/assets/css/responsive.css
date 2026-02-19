@@ -1,0 +1,61 @@
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-container {
+        height: 350px;
+    }
+    .video-container iframe {
+        height: 350px;
+    }
+    .header-section h1 {
+        font-size: 30px;
+    }
+    .benefits-header {
+        font-size: 18px;
+    }
+    .header-section p {
+        font-size: 14px;
+    }
+    .benefits-content {
+        grid-template-columns: 1fr;
+    }
+    .usage-header {
+        font-size: 18px;
+    }
+    .order-header {
+        font-size: 18px;
+    }
+    .order-form-container {
+        grid-template-columns: 1fr;
+    }
+    .floating-buttons {
+        bottom: 20px;
+        right: 20px;
+    }
+    .float-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    .form-group input, .form-group textarea {
+        padding: 10px 14px;
+    }
+    .order-btn-id {
+        font-size: 18px;
+    }
+    .order-number-btn {
+        font-size: 16px;
+    }
+    .usage-content-main {
+        padding: 25px 30px;
+    }
+    .usage-content ul li {
+        font-size: 15px;
+    }
+    .price-box .price {
+        font-size: 30px;
+    }
+    .benefits-list li {
+        font-size: 15px;
+    }
+}

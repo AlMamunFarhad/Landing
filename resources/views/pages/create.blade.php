@@ -80,22 +80,22 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label>Title *</label>
-                            <input type="text" name="title" class="form-control" required>
+                            <input type="text" name="title" class="form-control" required value="{{ old('title') }}">
                         </div>
 
                         <div class="col-md-6">
                             <label>Slug</label>
-                            <input type="text" name="slug" class="form-control">
+                            <input type="text" name="slug" class="form-control" value="{{ old('slug') }}">
                         </div>
 
                         <div class="col-md-6">
                             <label>Button Text</label>
-                            <input type="text" name="button_text" class="form-control">
+                            <input type="text" name="button_text" class="form-control" value="{{ old('button_text') }}">
                         </div>
 
                         <div class="col-md-6">
                             <label>Contact Number</label>
-                            <input type="text" name="contact_number" class="form-control">
+                            <input type="text" name="contact_number" class="form-control" value="{{ old('contact_number') }}">
                         </div>
 
                         <div class="col-12 form-check form-switch mt-3">
@@ -112,17 +112,17 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label>Hero Title</label>
-                            <input type="text" name="hero_title" class="form-control">
+                            <input type="text" name="hero_title" class="form-control" value="{{ old('hero_title') }}">
                         </div>
 
                         <div class="col-md-6">
                             <label>Hero Subtitle</label>
-                            <input type="text" name="hero_subtitle" class="form-control">
+                            <input type="text" name="hero_subtitle" class="form-control" value="{{ old('hero_subtitle') }}">
                         </div>
 
                         <div class="col-12">
                             <label>YouTube Link</label>
-                            <textarea rows="2" name="hero_youtube_link" class="form-control"></textarea>
+                            <textarea rows="2" name="hero_youtube_link" class="form-control">{{ old('hero_youtube_link') }}</textarea>
                         </div>
                     </div>
                 </div>
@@ -134,12 +134,12 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label>Product Title</label>
-                            <input type="text" name="product_title" class="form-control">
+                            <input type="text" name="product_title" class="form-control" value="{{ old('product_title') }}">
                         </div>
 
                         <div class="col-md-6">
                             <label>Product Subtitle</label>
-                            <input type="number" name="product_subtitle" class="form-control">
+                            <input type="number" name="product_subtitle" class="form-control" value="{{ old('product_subtitle') }}">
                         </div>
 
                         <div class="col-md-6">
@@ -149,7 +149,7 @@
 
                         <div class="col-12">
                             <label>Product IDs (comma separated)</label>
-                            <input type="text" name="product_ids" class="form-control">
+                            <input type="text" name="product_ids" class="form-control" value="{{ old('product_ids') }}">
                             <small class="text-muted">Example: 1,2,3</small>
                         </div>
                     </div>
@@ -161,17 +161,17 @@
 
                     <div class="mb-3">
                         <label>Title</label>
-                        <input type="text" name="why_trust_us_title" class="form-control">
+                        <input type="text" name="why_trust_us_title" class="form-control" value="{{ old('why_trust_us_title') }}">
                     </div>
 
                     <div class="mb-3">
                         <label>Description</label>
-                        <textarea rows="3" name="why_trust_us_description" id="why_trust_us_description" class="form-control"></textarea>
+                        <textarea rows="3" name="why_trust_us_description" id="why_trust_us_description" class="form-control">{{ old('why_trust_us_description') }}</textarea>
                     </div>
 
                     <div>
                         <label>Image</label>
-                        <input type="file" name="why_trust_us_image" class="form-control">
+                        <input type="file" name="why_trust_us_image" class="form-control" >
                     </div>
                 </div>
 
@@ -181,12 +181,12 @@
 
                     <div class="mb-3">
                         <label>Title</label>
-                        <input type="text" name="why_choose_title" class="form-control">
+                        <input type="text" name="why_choose_title" class="form-control" value="{{ old('why_choose_title') }}">
                     </div>
 
                     <div class="mb-3">
                         <label>Description</label>
-                        <textarea rows="3" name="why_choose_description" id="why_choose_description" class="form-control"></textarea>
+                        <textarea rows="3" name="why_choose_description" id="why_choose_description" class="form-control">{{ old('why_choose_description') }}</textarea>
                     </div>
                 </div>
 

@@ -61,14 +61,14 @@ $(document).ready(function () {
         products.forEach(function (p) {
             if (p.active) {
                 rows += '<tr>' +
-                    '<td><img src="' + p.img + '" class="yo-prod-img" alt=""><span class="yo-prod-name">' + p.name + '</span></td>' +
+                    '<td><span class="yo-prod-name">' + p.name + '</span></td>' +
                     '<td>× ' + p.qty + '&nbsp;&nbsp;' + toBn(p.price * p.qty) + ' ৳</td>' +
                 '</tr>';
             }
         });
         if (!rows) rows = '<tr><td colspan="2" style="color:#aaa;padding:8px 0;">কোনো পণ্য নির্বাচিত হয়নি</td></tr>';
         $('#orderTableBody').html(rows);
-
+// '<td><img src="' + p.img + '" class="yo-prod-img" alt=""><span class="yo-prod-name">' + p.name + '</span></td>' 
         // Subtotal / Total displays
         $('#subtotalDisplay').text(toBn(sub) + ' ৳');
         $('#totalDisplay').text(toBn(total) + ' ৳');

@@ -3,20 +3,36 @@
 use App\Http\Controllers\LandingPages\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [LandingPageController::class, 'index'])->name('home');
+    Route::get('/', [LandingPageController::class, 'index'])->name('home');
 
-// Admin CRUD
-Route::get('/pages', [LandingPageController::class, 'pages'])->name('pages');
-Route::get('/pages/create', [LandingPageController::class, 'create'])->name('pages.create');
-Route::post('/pages/store', [LandingPageController::class, 'store'])->name('pages.store');
-Route::get('/pages/{page}/edit', [LandingPageController::class, 'edit'])->name('pages.edit');
-Route::delete('/pages/{page}', [LandingPageController::class, 'destroy'])->name('pages.destroy');
-Route::get('/pages/{page}', [LandingPageController::class, 'show'])->name('pages.show'); // Show admin view
+    Route::get('/pages', [LandingPageController::class, 'pages'])->name('pages.index');
 
-// Public landing page by slug
-Route::get('/landing/{slug}', [LandingPageController::class, 'showBySlug'])->name('landing.show');
-Route::get('/landing/{page}/edit', [LandingPageController::class, 'edit'])->name('landing.edit');
-Route::put('/pages/{page}', [LandingPageController::class, 'update'])->name('pages.update');
+    Route::get('/pages/create', [LandingPageController::class, 'create'])->name('pages.create');
+
+    Route::post('/pages', [LandingPageController::class, 'store'])->name('pages.store');
+
+    Route::get('/pages/{page}/edit', [LandingPageController::class, 'edit'])->name('pages.edit');
+
+    Route::put('/pages/{page}', [LandingPageController::class, 'update'])->name('pages.update');
+
+    Route::delete('/pages/{page}', [LandingPageController::class, 'destroy'])->name('pages.destroy');
+
+    Route::get('/pages/{page}', [LandingPageController::class, 'show'])->name('pages.show');
+
+// Route::get('/', [LandingPageController::class, 'index'])->name('home');
+
+// // Admin CRUD
+// Route::get('/pages', [LandingPageController::class, 'pages'])->name('pages');
+// Route::get('/pages/create', [LandingPageController::class, 'create'])->name('pages.create');
+// Route::post('/pages/store', [LandingPageController::class, 'store'])->name('pages.store');
+// Route::get('/pages/{page}/edit', [LandingPageController::class, 'edit'])->name('pages.edit');
+// Route::delete('/pages/{page}', [LandingPageController::class, 'destroy'])->name('pages.destroy');
+// Route::get('/pages/{page}', [LandingPageController::class, 'show'])->name('pages.show'); // Show admin view
+
+// // Public landing page by slug
+// Route::get('/landing/{slug}', [LandingPageController::class, 'showBySlug'])->name('landing.show');
+// Route::get('/landing/{page}/edit', [LandingPageController::class, 'edit'])->name('landing.edit');
+// Route::put('/pages/{page}', [LandingPageController::class, 'update'])->name('pages.update');
 // Route::get('/landing/{slug}', [LandingPageController::class, 'showBySlug'])->name('landing.show');
 
 

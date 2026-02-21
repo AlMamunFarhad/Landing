@@ -222,10 +222,6 @@
     <!-- Summernote JS -->
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-bs5.min.js"></script>
     <script>
-        // $(function() {
-        //     $('#test').summernote();
-        // });
-
         $(document).ready(function() {
             $('#why_choose_description').summernote({
                 height: 200
@@ -235,8 +231,9 @@
             });
         });
     </script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
     @yield('scripts')
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+
     <!-- Custom JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {

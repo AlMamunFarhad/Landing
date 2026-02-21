@@ -170,7 +170,7 @@
                             <label>Product Image</label>
                             <input type="file" name="product_image" class="form-control" accept="image/*">
                             @if ($page->product_image)
-                                <img src="{{ asset($page->product_image) }}" class="img-preview" style="max-height: 100px; width:auto;">
+                                <img src="{{ asset('storage/'.$page->product_image) }}" class="img-preview" style="max-height: 100px; width:auto;">
                             @endif
                         </div>
 
@@ -200,7 +200,7 @@
                         <label>Image</label>
                         <input type="file" name="why_trust_us_image" class="form-control" accept="image/*">
                         @if ($page->why_trust_us_image)
-                            <img src="{{ asset($page->why_trust_us_image) }}" class="img-preview" style="max-height:200px; width:auto;">
+                            <img src="{{ asset('storage/'.$page->why_trust_us_image) }}" class="img-preview" style="max-height:200px; width:auto;">
                         @endif
                     </div>
                 </div>

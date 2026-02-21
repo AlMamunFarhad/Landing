@@ -140,7 +140,7 @@
                             </td>
 
                             <td class="text-end">
-                                <a href="{{ route('landing.show', $page->slug) }}"
+                                <a href="{{ route('pages.show', $page->slug) }}"
                                    class="btn btn-sm btn-outline-dark action-btn">
                                     View
                                 </a>

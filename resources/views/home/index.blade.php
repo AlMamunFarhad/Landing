@@ -152,7 +152,7 @@
                         <li>{!! $page->why_trust_us_description !!}</li>
                     </ul>
                     <div class="benefits-image">
-                        <img src="{{ asset($page->why_trust_us_image) }}" class="img-fluid img-responsive" alt="মশলা পণ্য">
+                        <img src="{{ asset('storage/'.$page->why_trust_us_image) }}" class="img-fluid img-responsive" alt="মশলা পণ্য">
                     </div>
                 </div>
                 <div class="text-center mt-4">
@@ -254,7 +254,7 @@
                                 <div class="sp-radio">
                                     <div class="sp-radio-dot"></div>
                                 </div>
-                                <img class="sp-img" src="assets/images/product.png" alt="মশলা">
+                                <img class="sp-img" src="{{ asset('storage/' . $page->product_image) }}" alt="মশলা">
                                 <div class="sp-meta">
                                     <div class="sp-name">শাহী গরম মশলা (২০০ গ্রাম) × <span class="qty-display">1</span>
                                     </div>
@@ -272,7 +272,7 @@
                                 <div class="sp-radio">
                                     <div class="sp-radio-dot"></div>
                                 </div>
-                                <img class="sp-img" src="assets/images/product.png" alt="মশলা">
+                                <img class="sp-img" src="{{ asset('storage/' . $page->product_image) }}"alt="মশলা">
                                 <div class="sp-meta">
                                     <div class="sp-name">শাহী গরম মশলা (৫০০ গ্রাম) × <span class="qty-display">1</span>
                                     </div>

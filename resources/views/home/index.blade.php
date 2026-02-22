@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    {{-- @foreach ($pages as $page) --}}
         <!-- Header Section -->
         <section class="header-section">
             <div class="container">
@@ -148,9 +147,9 @@
                     {{ $page->why_trust_us_title }}
                 </div>
                 <div class="benefits-content">
-                    <ul class="benefits-list">
-                        <li>{!! $page->why_trust_us_description !!}</li>
-                    </ul>
+                     <div>
+                     {!! $page->why_trust_us_description !!}
+                     </div>
                     <div class="benefits-image">
                         <img src="{{ asset('storage/'.$page->why_trust_us_image) }}" class="img-fluid img-responsive" alt="মশলা পণ্য">
                     </div>
@@ -175,9 +174,7 @@
                         {{ $page->why_choose_title }}
                     </div>
                     <div class="usage-content">
-                        <ul>
-                            <li>{!! $page->why_choose_description !!}</li>
-                        </ul>
+                       {!! $page->why_choose_description !!}
                     </div>
                     <div class="text-center mt-4">
                         <a href="#order-sec-id" class="order-btn-id">
@@ -360,5 +357,4 @@
                 </div>
             </div>
         </footer>
-    {{-- @endforeach --}}
 @endsection

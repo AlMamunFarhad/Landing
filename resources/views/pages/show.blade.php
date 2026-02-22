@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    {{-- @foreach ($page as $p) --}}
     <!-- Header Section -->
     <section class="header-section">
         <div class="container">
@@ -148,9 +147,6 @@
                 {{ $page->why_trust_us_title }}
             </div>
             <div class="benefits-content">
-                {{-- <ul class="benefits-list">
-                    <li></li>
-                </ul> --}}
                 <div>
                     {!! $page->why_trust_us_description !!}
                 </div>
@@ -362,24 +358,4 @@
             </div>
         </div>
     </footer>
-    {{-- @endforeach --}}
 @endsection
-
-@push('scripts')
-{{-- <script>
-    var products = @json($products->map(function($p){
-        return [
-            'name' => $p->name,
-            'price' => $p->price,
-            'img' => $p->product_image 
-                ? Storage::disk('public')->url($p->product_image)
-                : asset('assets/images/product.png'),
-            'qty' => 1,
-            'active' => false
-        ];
-    }));
-</script> --}}
-
-@endpush
-
-
